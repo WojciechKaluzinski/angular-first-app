@@ -1,0 +1,46 @@
+.todo{
+  display: flex;
+  padding: 10px 15px;
+  background-color: #9E768F;
+  border-bottom: 1px solid #B3CDD1;
+}
+.todo:nth-child(even){
+  background-color: #9FA4C4;
+}
+.todo:last-of-type{
+  border-bottom: 0;
+}
+.todo .id{
+  flex: 1 1 50px;
+}
+.todo .content{
+  flex: 1 1 100%;
+}
+.todo.done .content{
+  text-decoration: line-through;
+}
+.todo-input{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  appearance: none;
+  background-color: #C7F0BD;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+.todo-submit{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: #9E768F none;
+  color: #6C464F;
+  margin: 10px auto;
+
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
